@@ -3,8 +3,8 @@ body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {
   vertical-align: middle;
-  height:500px;
-  width: 500px;
+  max-height:500px;
+  max-width: 500px;
 }
 
 /* Slideshow container */
