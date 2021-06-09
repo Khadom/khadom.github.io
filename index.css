@@ -19,7 +19,7 @@ height: 850px;}
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  width: 100px;
   padding: 16px;
   margin-top: -22px;
   color: white;
