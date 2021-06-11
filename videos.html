@@ -15,7 +15,7 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 5</div>
-          <video controls>
+          <video name="vid" controls>
             <source src="videos/Yaser Schreibtisch.mp4" type="video/mp4">
           </video> 
          <strong><div class="text">Yaser am Schreibtisch</div></strong> 
@@ -23,7 +23,7 @@
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 5</div>
-            <video controls>
+            <video name="vid"  controls>
             <source src="videos/YaserEssen1.mp4" type="video/mp4">
             </video> 
            <strong><div class="text">Khadom am chillen </div></strong> 
@@ -31,15 +31,15 @@
     
         <div class="mySlides fade">
             <div class="numbertext">3 / 5</div>
-            <video controls>
-                source src="videos/YaserEssen2.mp4" type="video/mp4">
+            <video name="vid" controls>
+                <source src="videos/YaserEssen2.mp4" type="video/mp4">
             </video> 
             <strong><div class="text">Khadom am essen </div></strong> 
         </div>
         
         <div class="mySlides fade">
             <div class="numbertext">4 / 5</div>
-            <video controls>
+            <video name="vid" controls>
             <source src="videos/YaserJuju.mp4" type="video/mp4">
             </video> 
             <strong><div class="text">Khadom on da beat</div></strong> 
@@ -47,7 +47,7 @@
         
         <div class="mySlides fade">
             <div class="numbertext">5 / 5</div>
-            <video controls>
+            <video name="vid" controls>
             <source src="videos/YaserScream.mp4" type="video/mp4">
             </video> 
             <strong><div class="text">Yaser Scream :o</strong> 
@@ -75,6 +75,7 @@
         
         function plusSlides(n) {
           showSlides(slideIndex += n);
+          stopAllVideos();
         }
         
         function currentSlide(n) {
@@ -95,6 +96,11 @@
           }
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
+        }
+
+        function stopAllVideos(){
+          var vids = document.getElementsByName("vid");
+          vids.forEach(v => v.pause());
         }
         </script>
 
