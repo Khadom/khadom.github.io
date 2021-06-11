@@ -11,7 +11,7 @@
 
     <map name="hubmap">
       <area id="khadomimg" shape="rect" coords="0,70,150,0" alt="alttext" onmouseover="changeVisible(true,'khaa')" onmouseout="changeVisible(false,'khaa')">
-      <area class="hubimg" shape= "rect" coords="160,70,250,0" onmouseover="playDimer()">
+      <area class="hubimg" shape= "rect" coords="160,70,250,0" onmouseover="playDimer()" onmouseout="stopDimer()">
     </map>
     
     <h1><a href="fotos.html">Yaser Fotos</a></h1>
@@ -50,7 +50,14 @@
 
       function playDimer(){
         var x = document.getElementById("dimermomma");
+        x.volume = 0.35;
         x.play();
+      }
+
+      function stopDimer(){
+        var x = document.getElementById("dimermomma");
+        x.pause();
+        x.currentTime = 0;
       }
     </script>
     
