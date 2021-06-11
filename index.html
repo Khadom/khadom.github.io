@@ -7,21 +7,52 @@
     <title>Khadomhub</title>
   </head>
   <body>
-    <img src="images/yaserhub.png" class=hub>
+    <img src="images/yaserhub.png" class=hub usemap="#hubmap">
+
+    <map name="hubmap">
+      <area id="khadomimg" shape="rect" coords="0,70,150,0" alt="alttext" onmouseover="changeVisible(true,'khaa')" onmouseout="changeVisible(false,'khaa')">
+      <area class="hubimg" shape= "rect" coords="160,70,250,0" onmouseover="playDimer()">
+    </map>
     
     <h1><a href="fotos.html">Yaser Fotos</a></h1>
     <h1><a href="videos.html">Yaser Videos</a></h1>
 
-    <div>
-      <h1> @Credit:</h1>
+    <br>
+
+    <div class="creditcontainer">
+      <h2> @Credit:</h2>
     <ul>
-      <li class="bonjo">Bonjo aka Muhib</li>
+      <li class="bonjo" >Bonjo aka Muhib</li>
       <li class="ammar">Ammar Jr Dos Santos</li>
       <li class="dave">Playmaking Dave </li>
       <li class="edis">Edis H ohne K </li>
       <img class="credit">
     </ul>
     </div>
+
+    <h1 id="khaa">KHAAAAAAAAADOOOOOOOOOOOOOMMM!!</h1>
+
+    <audio id="dimermomma">
+      <source src="sounds/dimermemomma.mp3" type="audio/mpeg">
+    </audio> 
+
+    <script>
+      function changeVisible(change,elementId){
+        var khaa = document.getElementById(elementId);
+        if(change){
+          khaa.style.visibility = "visible";
+        }
+        else{
+          khaa.style.visibility = "hidden";
+        }
+        
+      }
+
+      function playDimer(){
+        var x = document.getElementById("dimermomma");
+        x.play();
+      }
+    </script>
     
   </body>
 </html>

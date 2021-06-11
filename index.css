@@ -1,13 +1,21 @@
 @import "";
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0;background-color: black; color: white;}
+body {font-family:cursive; margin:0;background-color: black; color: white;}
 
 img.credit{
-  width:300px; 
-  height:300px;
+  width:400px; 
+  height:400px;
   visibility: hidden;
-  background-size: 300px 300px;
+  background-size: 400px 400px;
+}
 
+.creditcontainer{
+  margin-left: 45%;
+}
+
+h1{
+  margin: 20px;
+  margin-left: 45%;
 }
 
 li {
@@ -17,13 +25,20 @@ li {
 img.hub{
   width: 250px;
   height: 70px;
-  display: inline;
-  margin-left: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+#khaa{
+  visibility:hidden;
 }
 
 .edis:hover ~ .credit{
   visibility: visible;
-  background-image: url(images/yaserhub.png);
+  background-image: url(images/edis.jpg);
 }
 .bonjo:hover ~ .credit {
   visibility: visible;
