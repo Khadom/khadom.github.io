@@ -41,7 +41,7 @@ img.hub{
 
 .edis:hover ~ .credit{
   visibility: visible;
-  background-image: url(images/edis.jpg);
+  background-image: url(images/edis2.jpg);
 }
 .bonjo:hover ~ .credit {
   visibility: visible;
