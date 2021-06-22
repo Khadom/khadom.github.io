@@ -3,7 +3,7 @@
 body {font-family: cursive; margin:0;background-color: black;}
 .mySlides {display: none}
 video {vertical-align: middle;
-width: 80%;
+width: 100%;
 height: 850px;}
 
 button{
